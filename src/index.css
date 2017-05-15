@@ -1,0 +1,59 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+.app {
+  height: 100%;
+  cursor: pointer;
+}
+
+.josef,
+.albers,
+.interaction {
+  position: absolute;
+  transition: 0.25s ease all;
+}
+
+.josef {
+  height: 90vh;
+  top: 5vh;
+  width: 80%;
+  left: 10%;
+}
+
+.albers {
+  height: 75vh;
+  top: 10vh;
+  width: 70%;
+  left: 15%;
+}
+
+.interaction {
+  height: 40vh;
+  top: 25vh;
+  width: 50%;
+  left: 25%;
+}
+
+@media (max-width:600px)  {
+  .josef {
+    height: 80vh;
+    top: 15vh;
+  }
+  .albers {
+    height: 60vh;
+    top: 15vh;
+  }
+  .interaction {
+    height: 25vh;
+    top: 30vh;
+    width: 60%;
+    left: 20%;
+  }
+}
