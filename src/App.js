@@ -20,7 +20,7 @@ const colors = [
 
 class App extends Component {
   state = {
-    colors: colors[0]
+    colors: colors[Math.floor(Math.random() * colors.length)]
   };
 
   handleClick = () => {

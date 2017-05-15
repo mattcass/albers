@@ -2,6 +2,7 @@
   "name": "albers",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://matthewcasserly.com/albers",
   "devDependencies": {
     "react-scripts": "0.9.5"
   },
