@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 
 const colors = [
   ['#06846F', '#30B14D', '#0187C6', '#DCBB18'],
