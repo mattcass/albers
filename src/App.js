@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Transition from 'react-transition-group/CSSTransitionGroup';
 
 const colors = [
   ['#06846F', '#30B14D', '#0187C6', '#DCBB18'],
@@ -36,14 +37,28 @@ class App extends Component {
         style={{ background: this.state.colors[0] }}
         onClick={this.handleClick}
       >
-        <div className="josef" style={{ background: this.state.colors[1] }}>
-          <div className="albers" style={{ background: this.state.colors[2] }}>
+        <Transition
+          transitionName="animate"
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
+        >
+          <div
+            className="josef"
+            key={this.state.colors[1]}
+            style={{ background: this.state.colors[1] }}
+          >
             <div
-              className="interaction"
-              style={{ background: this.state.colors[3] }}
-            />
+              className="albers"
+              style={{ background: this.state.colors[2] }}
+            >
+
+              <div
+                className="interaction"
+                style={{ background: this.state.colors[3] }}
+              />
+            </div>
           </div>
-        </div>
+        </Transition>
       </div>
     );
   }
